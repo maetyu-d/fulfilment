@@ -1,5 +1,7 @@
 # Fulfilment
 
+![](https://github.com/maetyu-d/fulfilment/blob/main/Screenshot%202026-03-05%20at%2003.35.04.png)
+
 `Fulfilment` is a C++/raylib warehouse simulation game with Minecraft-style visuals and JUCE-generated background music.
 
 ## Core Gameplay
