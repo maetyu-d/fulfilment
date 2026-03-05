@@ -1,37 +1,67 @@
 # Fulfilment
 
-A next-generation warehouse robot game inspired by climbing-rack platforms (for example, [Exotec](https://www.exotec.com/system/automated-warehouse-robots/?creative=732460942001&keyword=exotec%20robotics&matchtype=b&network=g&device=c&utm_source=google&utm_medium=cpc&utm_campaign=bu~weu_c~gbr_l~en_e~p-search_b~goo_o~conversion_t~brand&gad_source=1&gad_campaignid=21645955334&gbraid=0AAAAApDt7A2zq56FtPnhzlHEAFuW79FcY&gclid=CjwKCAiAzZ_NBhAEEiwAMtqKy4QhVfeQdZKTriL0FOO4eUXeZ5vu65nyd1sp0Pf0S6zyD_NDFrC9XBoCo64QAvD_BwE)-style flows), the relentless march of consumer capitalism, and the fact that a huge swathe of fields in Minworth, West Midlands, has been replaced by the more than one-million-square-foot Amazon EMA4 fulfilment centre. Remember, the job never ends, but you can...
+`Fulfilment` is a C++/raylib warehouse simulation game with Minecraft-style visuals and JUCE-generated background music.
 
-## Features
+## Core Gameplay
 
-- Goods-to-person flow loop (orders generate bin retrieval tasks).
-- Autonomous robots that drive along floor lanes, transition onto rack columns, climb vertically to bin levels, retrieve bins and deliver to pick stations, and return bins to storage.
-- Swarm-y robot behaviours:
-  - task scheduling (order queue => idle robot assignment)
-  - local congestion avoidance (cell occupancy + reroute attempts)
-  - path planning
-  - battery consumption and charging priorities
+- 3D warehouse swarm simulation with rack-climbing robots
+- Goods-to-person loop:
+  - order appears
+  - robot retrieves bin
+  - robot delivers to pick station
+  - robot returns bin to rack
+- Company economy:
+  - `Company Income` increases per completed order
+  - `Your takehome pay` accrues over time at `GBP 12.21/hour`
+- Worker status mechanics:
+  - `Tiredness` slowly increases
+  - `Urine level` slowly and erratically increases
+  - buy coffee (`GBP 3`) to reset tiredness
+  - use toilet to reset urine, but controls lock for 20 seconds
 
-## Controls
+## Visual + UI Features
 
-- `W/A/S/D`: move camera
-- `Q/E`: move camera down/up
-- Mouse drag (right button): look around
-- `R`: reset simulation
-- `TAB`: cycle camera mode (top-down, side-on, isometric, orbital, free)
-- `F1`: toggle debug overlays
-- `ESC`: quit
+- Voxel warehouse, ladders/rails, bins, stations, chargers
+- Robot paths with color-coded route states
+- Battery warning indicators above low-charge robots
+- Top-right robot battery panel with per-robot `Charge` button
+- Bottom-right charger table with free/busy state and charging ETA
+- Toggle buttons to minimize/expand battery and charger panels
+- Title screen:
+  - `FULFILMENT`
+  - subtitle: `Adventures in Warehouse Capitalism`
+  - tagline: `Because work never ends.`
 
-## Build
+## Audio
+
+- JUCE-powered procedural euro-trance soundtrack
+- 5 generated tracks in rotating playlist
+- Music speed increases proportionally (up to +10%) as average robot battery drops
+
+## Camera + Input
+
+- `TAB` cycles: top-down, side-on, isometric, orbital, free
+- Mouse wheel zoom in non-free camera modes
+- Free camera movement:
+  - `W/A/S/D` move
+  - `Q/E` down/up
+  - right mouse drag to look
+
+## Build and Run
 
 Prerequisites:
 - CMake 3.18+
 - C++17 compiler
-- Internet access at configure time (CMake fetches raylib)
-- A local `JUCE` folder at project root (already included in this workspace)
+- Internet access at configure time (for raylib fetch)
+- Local `JUCE/` folder at project root
 
 ```bash
+cd /Users/md/Downloads/simulations
 cmake -S . -B build
 cmake --build build -j
 ./build/fulfilment
 ```
+
+## Notes
+
+This is a stylized simulation game prototype, not a warehouse digital twin.

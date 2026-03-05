@@ -19,23 +19,23 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(raylib)
 add_subdirectory(JUCE)
 
-add_executable(skypod_swarm
+add_executable(fulfilment
   src/main.cpp
 )
 
-target_link_libraries(skypod_swarm PRIVATE raylib)
-target_link_libraries(skypod_swarm PRIVATE
+target_link_libraries(fulfilment PRIVATE raylib)
+target_link_libraries(fulfilment PRIVATE
   juce::juce_audio_basics
   juce::juce_dsp
   juce::juce_core
 )
-target_compile_definitions(skypod_swarm PRIVATE
+target_compile_definitions(fulfilment PRIVATE
   JUCE_WEB_BROWSER=0
   JUCE_USE_CURL=0
 )
 
 if (APPLE)
-  target_link_libraries(skypod_swarm PRIVATE "-framework IOKit" "-framework Cocoa" "-framework OpenGL")
+  target_link_libraries(fulfilment PRIVATE "-framework IOKit" "-framework Cocoa" "-framework OpenGL")
 elseif (UNIX)
-  target_link_libraries(skypod_swarm PRIVATE m pthread dl rt X11)
+  target_link_libraries(fulfilment PRIVATE m pthread dl rt X11)
 endif()
