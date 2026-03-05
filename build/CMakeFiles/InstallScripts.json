@@ -1,0 +1,15 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/md/Downloads/simulations/build/cmake_install.cmake",
+		"/Users/md/Downloads/simulations/build/_deps/raylib-build/cmake_install.cmake",
+		"/Users/md/Downloads/simulations/build/_deps/raylib-build/raylib/cmake_install.cmake",
+		"/Users/md/Downloads/simulations/build/_deps/raylib-build/raylib/external/glfw/cmake_install.cmake",
+		"/Users/md/Downloads/simulations/build/_deps/raylib-build/raylib/external/glfw/src/cmake_install.cmake",
+		"/Users/md/Downloads/simulations/build/JUCE/cmake_install.cmake",
+		"/Users/md/Downloads/simulations/build/JUCE/modules/cmake_install.cmake",
+		"/Users/md/Downloads/simulations/build/JUCE/extras/Build/cmake_install.cmake",
+		"/Users/md/Downloads/simulations/build/JUCE/extras/Build/juceaide/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
