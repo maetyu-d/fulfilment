@@ -2,11 +2,11 @@
 
 ![](https://github.com/maetyu-d/fulfilment/blob/main/Screenshot%202026-03-05%20at%2003.35.04.png)
 
-`Fulfilment` is a C++/raylib warehouse simulation game with Minecraft-style visuals and JUCE-generated background music.
+`Fulfilment` is a warehouse simulation game with Minecraft-style visuals, inspired by ![Exotec Skypods](https://www.exotec.com/system/automated-warehouse-robots/?creative=732460942001&keyword=exotec%20robotics&matchtype=b&network=g&device=c&utm_source=google&utm_medium=cpc&utm_campaign=bu~weu_c~gbr_l~en_e~p-search_b~goo_o~conversion_t~brand&gad_source=1&gad_campaignid=21645955334&gbraid=0AAAAApDt7A2zq56FtPnhzlHEAFuW79FcY&gclid=CjwKCAiAzZ_NBhAEEiwAMtqKy4QhVfeQdZKTriL0FOO4eUXeZ5vu65nyd1sp0Pf0S6zyD_NDFrC9XBoCo64QAvD_BwE), the greater than 1 million square foot Amazon fulfilment centre that has replaced fields by my mum's house, and the relentless march of consumer capitalism.
 
 ## Core Gameplay
 
-- 3D warehouse swarm simulation with rack-climbing robots
+- 3D warehouse simulation with swarm-y, rack-climbing robots
 - Goods-to-person loop:
   - order appears
   - robot retrieves bin
