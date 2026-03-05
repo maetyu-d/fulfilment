@@ -2,7 +2,9 @@
 
 ![](https://github.com/maetyu-d/fulfilment/blob/main/Screenshot%202026-03-05%20at%2003.35.04.png)
 
-Fulfilment is a warehouse simulation game with Minecraft-style visuals, inspired by Exotec Skypods, the more than 1 million square foot Amazon fulfilment centre that has replaced fields by my mum's house, and the relentless march of consumer capitalism. Short gameplay video [here](https://www.youtube.com/watch?v=k8HdXWZlZ0Q).
+Fulfilment is a warehouse simulation game with Minecraft-style visuals, inspired by Exotec Skypods, the more than 1 million square foot Amazon fulfilment centre that has replaced fields by my mum's house, and the relentless march of consumer capitalism. 
+
+Short gameplay video [here](https://www.youtube.com/watch?v=k8HdXWZlZ0Q).
 
 ## Core Gameplay
 
