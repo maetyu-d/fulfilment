@@ -33,5 +33,5 @@ Prerequisites:
 ```bash
 cmake -S . -B build
 cmake --build build -j
-./build/skypod_swarm
+./build/fulfilment
 ```
