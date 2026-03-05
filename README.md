@@ -1,6 +1,6 @@
-# Skypod Swarm 3D (Minecraft-style warehouse simulation)
+# Fulfilment
 
-A C++/raylib prototype game that simulates a next-generation 3D warehouse robot system inspired by climbing-rack platforms (for example, Exotec-style flows).
+A next-generation warehouse robot game inspired by climbing-rack platforms (for example, [Exotec](https://www.exotec.com/system/automated-warehouse-robots/?creative=732460942001&keyword=exotec%20robotics&matchtype=b&network=g&device=c&utm_source=google&utm_medium=cpc&utm_campaign=bu~weu_c~gbr_l~en_e~p-search_b~goo_o~conversion_t~brand&gad_source=1&gad_campaignid=21645955334&gbraid=0AAAAApDt7A2zq56FtPnhzlHEAFuW79FcY&gclid=CjwKCAiAzZ_NBhAEEiwAMtqKy4QhVfeQdZKTriL0FOO4eUXeZ5vu65nyd1sp0Pf0S6zyD_NDFrC9XBoCo64QAvD_BwE)-style flows).
 
 ## Features
 
